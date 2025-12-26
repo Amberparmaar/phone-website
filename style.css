@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "roboto", sans-serif;
+  list-style-type: none;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+nav {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: black;
+}
+.menu {
+  display: none;
+  cursor: pointer;
+}
+
+nav .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.nav-container .logo {
+  font-size: 40px;
+  color: white;
+  padding-left: 30px;
+}
+
+.nav-container .logo span {
+  color: rgb(81, 211, 81);
+}
+
+.nav-container .nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 30px;
+  list-style: none;
+  gap: 40px;
+}
+
+.nav-container .nav-links a {
+  color: white;
+  font-size: 20px;
+}
+
+.nav-container .nav-links a:hover {
+  color: rgb(81, 211, 81);
+  transition: all 0.3s ease-in-out;
+}
+
+.hero {
+  width: 100%;
+  height: auto;
+  background-image: url("./assets/bg1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(135, 133, 133);
+  margin-top: 70px;
+  padding: 60px 0 30px 50px;
+}
+
+.hero .hero-text {
+  width: 50%;
+}
+
+.hero img {
+  width: 400px;
+  height: 300px;
+}
+
+.hero-text h1 span {
+  color: rgb(120, 119, 119);
+}
+
+.hero-text h1,
+.feature h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: rgb(202, 199, 199);
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  border: 1px solid rgb(81, 211, 81);
+  color: rgb(81, 211, 81);
+  font-size: 18px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: rgb(81, 211, 81);
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn1 {
+  padding: 10px 30px;
+  border: none;
+  background-color: rgb(81, 211, 81);
+  border: 1px solid rgb(81, 211, 81);
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.btn1:hover {
+  background-color: transparent;
+  color: rgb(81, 211, 81);
+  transition: all 0.3s ease-in-out;
+}
+
+.heading {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  color: black;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+.heading span {
+  color: rgb(81, 211, 81);
+}
+
+.heading + p {
+  color: gray;
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.about .img,
+.feature {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.about .img .text,
+.feature .text {
+  width: 50%;
+  line-height: 30px;
+  padding-left: 30px;
+}
+
+.about .img .text p,
+.feature .text p,
+.consectetur p {
+  color: rgb(167, 165, 165);
+  font-size: 16px;
+}
+
+.overlay {
+  width: 100%;
+  height: auto;
+  background-image: url("./assets/bg2.jfif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.overlay .flex .card {
+  width: 250px;
+  height: 150px;
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  background-color: transparent;
+}
+
+.overlay .flex {
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.white h4 {
+  color: white;
+}
+
+.bgtext {
+  width: 100%;
+  height: auto;
+  background-image: url("./assets/bg2.jfif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 50px;
+}
+
+.bgtext p {
+  color: white;
+}
+.consectetur p {
+  padding: 30px;
+}
+#gallery h1 {
+  margin: 60px auto;
+  color: rgb(81, 211, 81);
+  text-align: center;
+  text-transform: uppercase;
+}
+#gallery {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#gallery .gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 200px;
+  height: 200px;
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+  border: 5px dashed black;
+  background-color: tomato;
+  transform: rotate(20deg);
+}
+
+.gallery img:hover {
+  transform: rotate(60deg);
+  transition: all 0.3s ease-in-out;
+}
+
+#contact {
+  width: 100%;
+  height: auto;
+  background-image: url("./assets/bg1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin-top: 50px;
+}
+
+#contact form h4 {
+  font-size: 24px;
+  color: white;
+  padding-top: 30px;
+}
+
+#contact form input,
+#contact form textarea {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  background-color: transparent;
+  padding: 15px 0;
+  border: none;
+  border-bottom: 1px solid rgb(189, 188, 188);
+  outline: none;
+  color: rgb(189, 188, 188);
+}
+
+#contact form {
+  width: 35%;
+  height: 400px;
+  background-color: black;
+  text-align: center;
+}
+
+#contact .contact-info {
+  width: 35%;
+  height: 400px;
+  background-color: white;
+  padding: 30px;
+  color: gray;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+#contact .contact-info h4 {
+  font-size: 24px;
+  color: black;
+}
+
+#contact .contact-info p {
+  display: inline-block;
+}
+
+#contact .contact-info i {
+  color: black;
+  margin-right: 10px;
+}
+
+footer {
+  width: 100%;
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+footer .links {
+  width: 180px;
+  height: 300px;
+  line-height: 50px;
+}
+
+footer .links h4 {
+  font-size: 30px;
+  margin-top: 15px;
+}
+
+footer .links h4 ~ a {
+  color: white;
+  display: block;
+}
+
+footer .links h4 ~ a i {
+  color: rgb(81, 211, 81);
+  margin-right: 10px;
+}
+
+footer .links h4 ~ a i:hover {
+  margin-right: 20px;
+  transition: all 1s ease-in-out 0.2s;
+}
+.sticky i {
+  position: sticky;
+  top: 20px;
+  color: rgb(81, 211, 81);
+  font-size: 30px;
+}
+
+.copyright {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
